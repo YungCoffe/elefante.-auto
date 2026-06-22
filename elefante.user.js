@@ -18,8 +18,8 @@
     let painelCriado = false;
     let statusBackend = { rodando: false, tempo_acumulado: 0, minimo_exigido: 0, ciclo_atual: 0 };
     
-    // URL ATUALIZADA DO SEU TÚNEL PÚBLICO
-    const BACKEND_URL = "https://17f2132d3bcba7.lhr.life";
+    // URL FIXA DEFINITIVA DO SEU TÚNEL DO SERVEO
+    const BACKEND_URL = "https://yungcoffe-elefante.serveousercontent.com";
 
     function validarEdefinirToken(rawToken) {
         if (!rawToken || tokenValido) return;
@@ -296,7 +296,7 @@
 
         if (tokenValido && idLivroReal && !btn.dataset.pronto) {
             btn.dataset.pronto = 'true';
-            atualizarInfoVisual();
+            atualizarUI();
         }
         if (status) status.innerHTML = info.join(' <span style="color:#444">|</span> ') || '⏳ Procurando...';
     }
