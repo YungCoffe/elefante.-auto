@@ -19,7 +19,7 @@
     let statusBackend = { rodando: false, tempo_acumulado: 0, minimo_exigido: 0, ciclo_atual: 0 };
     
     // URL FIXA DEFINITIVA DO SEU TÚNEL DO SERVEO
-    const BACKEND_URL = "https://yungcoffe-elefante.serveousercontent.com";
+    const BACKEND_URL = "https://yung.serveousercontent.com";
 
     function validarEdefinirToken(rawToken) {
         if (!rawToken || tokenValido) return;
